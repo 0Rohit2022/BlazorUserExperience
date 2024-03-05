@@ -39,6 +39,8 @@ accessible after login. Key features include form validation, secure password st
    
    - Install .NET 8 SDK for backend development.
    - Install Blazor WebAssembly for frontend development.
+   - Create Blazor Web App from Visual Studio Code 2022.
+   - Choose Auto(Server and WebAssembly) for the server-side and client-side architecture
    - Set up SQL Server 2022 locally or connect to an existing instance.
    
 3. **Setting up the SQL Server database:**
@@ -46,6 +48,7 @@ accessible after login. Key features include form validation, secure password st
    - Create a database named 'UserDB' (or any preferred name).
    - Run the SQL script provided in the project repository to create the necessary tables (users table, etc.).
    - Configure the database connection string in the backend API project's appsettings.json file.
+   - To run the project Click on the "Start Without Debugging(Ctrl + F5).
 
 4. **Additional configuration steps or prerequisites:**
 
