@@ -67,6 +67,7 @@ accessible after login. Key features include form validation, secure password st
     Blazored.SessionStorage
     Microsoft.EntityFrameWorkCore
     Microsoft.AspNetCore
+    etc..
     ```
 
 📺🐦🔧📊🔍🚀
