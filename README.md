@@ -6,7 +6,7 @@
 The project aims to develop a web application using Blazor for the frontend and .NET 8 for the backend API, with SQL Server 2022 as the database. The application will feature user registration, login, and a dashboard 
 accessible after login. Key features include form validation, secure password storage, OTP mechanism for registration, and user photo upload.
 
-## Tools Utilized in this project
+## Tools Utilized in this project. Click on the Click here for the downloading.
 
 | Content                | Link                                                                        |
 | -------------------    | ----------------------------------------------------------------------------|
@@ -29,7 +29,7 @@ accessible after login. Key features include form validation, secure password st
 - Database: SQL Server 2022
 
 ## Archietecture
--The frontend will be developed using Blazor WebAssembly for its capability to run client-side in the browser. The backend will consist of a .NET 8 Web API, providing 
+-The front end will be developed using Blazor WebAssembly for its capability to run client-side in the browser. The backend will consist of a .NET 8 Web API, providing 
  RESTful endpoints for user registration, login, and fetching user details. SQL Server 2022 will be used to store user data.
 
 
