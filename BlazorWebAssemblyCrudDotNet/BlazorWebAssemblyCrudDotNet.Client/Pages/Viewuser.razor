@@ -1,0 +1,56 @@
+﻿@page "/viewuser/{id:int}"
+@inject HttpClient Http
+@rendermode @(new InteractiveWebAssemblyRenderMode(prerender: false))
+
+<h3>User Details</h3>
+
+@if (Id == null || registerUser == null || registerUser.Id == 0)
+{
+    <h3>This user does not exist</h3>
+}
+else
+{
+    <div class="card">
+        <div class="card-body">
+            <h3 class="card-title">@registerUser.Name</h3>
+            <p class="card-text"><strong>Username:</strong> @registerUser.Username</p>
+            <p class="card-text"><strong>Email:</strong> @registerUser.Email</p>
+            @if (registerUser.Image != null)
+            {
+                <img src="@($"data:image/jpeg;base64,{Convert.ToBase64String(registerUser.Image)}")" class="card-img-top" alt="User Image">
+            }
+            else
+            {
+                <p class="card-text">No image available</p>
+            }
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public int? Id { get; set; }
+
+    public Registration registerUser { get; set; }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (Id is not null && Id > 0)
+        {
+            try
+            {
+                registerUser = await Http.GetFromJsonAsync<Registration>($"api/users/{(int)Id}");
+            }
+            catch (Exception ex)
+            {
+                // Handle the error gracefully
+                Console.WriteLine($"An error occurred: {ex.Message}");
+                registerUser = null;
+            }
+        }
+        else
+        {
+            registerUser = null;
+        }
+    }
+}

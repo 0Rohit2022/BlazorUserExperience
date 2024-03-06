@@ -1,0 +1,11 @@
+F:\C #\BlazorWebAssemblyCrudDotNet\BlazorWebAssemblyCrudDotNet8.Shared\bin\Debug\net8.0\BlazorWebAssemblyCrudDotNet8.Shared.deps.json
+F:\C #\BlazorWebAssemblyCrudDotNet\BlazorWebAssemblyCrudDotNet8.Shared\bin\Debug\net8.0\BlazorWebAssemblyCrudDotNet8.Shared.dll
+F:\C #\BlazorWebAssemblyCrudDotNet\BlazorWebAssemblyCrudDotNet8.Shared\bin\Debug\net8.0\BlazorWebAssemblyCrudDotNet8.Shared.pdb
+F:\C #\BlazorWebAssemblyCrudDotNet\BlazorWebAssemblyCrudDotNet8.Shared\obj\Debug\net8.0\BlazorWebAssemblyCrudDotNet8.Shared.GeneratedMSBuildEditorConfig.editorconfig
+F:\C #\BlazorWebAssemblyCrudDotNet\BlazorWebAssemblyCrudDotNet8.Shared\obj\Debug\net8.0\BlazorWebAssemblyCrudDotNet8.Shared.AssemblyInfoInputs.cache
+F:\C #\BlazorWebAssemblyCrudDotNet\BlazorWebAssemblyCrudDotNet8.Shared\obj\Debug\net8.0\BlazorWebAssemblyCrudDotNet8.Shared.AssemblyInfo.cs
+F:\C #\BlazorWebAssemblyCrudDotNet\BlazorWebAssemblyCrudDotNet8.Shared\obj\Debug\net8.0\BlazorWebAssemblyCrudDotNet8.Shared.csproj.CoreCompileInputs.cache
+F:\C #\BlazorWebAssemblyCrudDotNet\BlazorWebAssemblyCrudDotNet8.Shared\obj\Debug\net8.0\BlazorWebAssemblyCrudDotNet8.Shared.dll
+F:\C #\BlazorWebAssemblyCrudDotNet\BlazorWebAssemblyCrudDotNet8.Shared\obj\Debug\net8.0\refint\BlazorWebAssemblyCrudDotNet8.Shared.dll
+F:\C #\BlazorWebAssemblyCrudDotNet\BlazorWebAssemblyCrudDotNet8.Shared\obj\Debug\net8.0\BlazorWebAssemblyCrudDotNet8.Shared.pdb
+F:\C #\BlazorWebAssemblyCrudDotNet\BlazorWebAssemblyCrudDotNet8.Shared\obj\Debug\net8.0\ref\BlazorWebAssemblyCrudDotNet8.Shared.dll

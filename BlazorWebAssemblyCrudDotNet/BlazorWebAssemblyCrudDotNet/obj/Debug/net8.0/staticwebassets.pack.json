@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "F:\\C #\\BlazorWebAssemblyCrudDotNet\\BlazorWebAssemblyCrudDotNet\\BlazorWebAssemblyCrudDotNet\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorWebAssemblyCrudDotNet.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BlazorWebAssemblyCrudDotNet.bundle.scp.css"
+    },
+    {
+      "Id": "F:\\C #\\BlazorWebAssemblyCrudDotNet\\BlazorWebAssemblyCrudDotNet\\BlazorWebAssemblyCrudDotNet\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "F:\\C #\\BlazorWebAssemblyCrudDotNet\\BlazorWebAssemblyCrudDotNet\\BlazorWebAssemblyCrudDotNet\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "F:\\C #\\BlazorWebAssemblyCrudDotNet\\BlazorWebAssemblyCrudDotNet\\BlazorWebAssemblyCrudDotNet\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "F:\\C #\\BlazorWebAssemblyCrudDotNet\\BlazorWebAssemblyCrudDotNet\\BlazorWebAssemblyCrudDotNet\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BlazorWebAssemblyCrudDotNet.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BlazorWebAssemblyCrudDotNet.props",
+      "PackagePath": "build\\BlazorWebAssemblyCrudDotNet.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BlazorWebAssemblyCrudDotNet.props",
+      "PackagePath": "buildMultiTargeting\\BlazorWebAssemblyCrudDotNet.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BlazorWebAssemblyCrudDotNet.props",
+      "PackagePath": "buildTransitive\\BlazorWebAssemblyCrudDotNet.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,58 @@
+﻿@page "/login"
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@rendermode @(new InteractiveWebAssemblyRenderMode(prerender: false))
+
+<h3>Login</h3>
+
+@if (errorMessage != null)
+{
+    <p>@errorMessage</p>
+}
+
+<EditForm Model="@loginModel" OnSubmit="HandleSubmit">
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <InputText autocomplete="off" required id="email" type="email" class="form-control" @bind-Value="loginModel.Email" />
+    </div>
+    <div class="form-group">
+        <label for="password">Password:</label>
+        <InputText autocomplete="off" required id="password" type="password" class="form-control" @bind-Value="loginModel.Password" />
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+    <button type="button" class="btn btn-secondary" @onclick="ClearForm">Clear Form</button>
+</EditForm>
+
+@code {
+    private Registration loginModel = new Registration();
+    private string errorMessage;
+
+    private void ClearForm()
+    {
+        loginModel.Email = "";
+        loginModel.Password = "";
+    }
+
+    private async Task HandleSubmit()
+    {
+        var response = await Http.PostAsJsonAsync("api/users/login", loginModel);
+
+        if (response.IsSuccessStatusCode)
+        {
+            var responseBody = await response.Content.ReadAsStringAsync();
+            if (responseBody == "Success")
+            {
+                // Navigate to the /users page with the user's email as a parameter
+                NavigationManager.NavigateTo($"/users");
+            }
+            else
+            {
+                errorMessage = "Invalid email or password.";
+            }
+        }
+        else
+        {
+            errorMessage = "Login failed. Please try again.";
+        }
+    }
+}

@@ -1,0 +1,78 @@
+﻿@page "/users"
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@rendermode @(new InteractiveWebAssemblyRenderMode(prerender: false))
+
+<PageTitle>User Dashboard</PageTitle>
+
+<h1>User Dashboard</h1>
+
+<p>This component demonstrates showing data.</p>
+
+@if (registrations == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>OTP</th>
+                <th>Image</th>
+                <th>Button</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var registration in registrations)
+            {
+                <tr>
+                    <td>@registration.Username</td>
+                    <td>@registration.Name</td>
+                    <td>@registration.Email</td>
+                    <td>@registration.OTP</td>
+                    <td>
+                        @if (registration.Image != null)
+                        {
+                            <img class="user-image" src="@($"data:image/jpeg;base64,{Convert.ToBase64String(registration.Image)}")" alt="User Image" />
+                        }
+                        else
+                        {
+                            <p>No image available</p>
+                        }
+                    </td>
+                    <td><button class="btn btn-primary" @onclick="@(() => ViewUser(registration.Id))">View</button></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+
+@code {
+    List<Registration> registrations = new List<Registration>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var result = await Http.GetFromJsonAsync<List<Registration>>("api/users");
+        if (result is not null)
+            registrations = result;
+    }
+
+    void ViewUser(int id)
+    {
+        NavigationManager.NavigateTo($"/viewuser/{id}");
+    }
+
+}
+
+<style>
+    .user-image {
+        max-width: 100px; /* Set the maximum width of the image */
+        max-height: 100px; /* Set the maximum height of the image */
+    }
+</style>
